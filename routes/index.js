@@ -126,7 +126,7 @@ exports.logout = function (req, res, next) {
     return res.redirect('/')  
   })
 }
-
+// dummy commit
 function parse(todo) {
   var t = todo;
 
