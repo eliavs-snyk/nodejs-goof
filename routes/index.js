@@ -360,7 +360,7 @@ exports.chat = {
       res.status(403).send({ ok: false, error: 'Access denied' });
       return;
     }
-
+//dummy
     messages = messages.filter((m) => m.id !== req.body.messageId);
     res.send({ ok: true });
   }
