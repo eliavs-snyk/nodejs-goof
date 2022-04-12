@@ -343,7 +343,7 @@ exports.chat = {
       // Default message icon. Cen be overwritten by user.
       icon: '👋',
     };
-
+//hello
     _.merge(message, req.body.message, {
       id: lastId++,
       timestamp: Date.now(),
