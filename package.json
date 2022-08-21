@@ -53,5 +53,5 @@
     "nodemon": "^2.0.7",
     "snyk": "^1.244.0"
   },
-  "license": "UNLICENSED"
+  "license": "BSD-3-Clause"
 }
