@@ -3,7 +3,7 @@
   "version": "1.0.1",
   "description": "A vulnerable todo demo application",
   "homepage": "https://snyk.io/",
-  "license": "BSD-3-Clause",
+  "license": "AGPL-3.0",
   "repository": {
     "type": "git",
     "url": "https://github.com/Snyk/snyk-todo-list-demo-app/"
@@ -16,7 +16,6 @@
     "test": "snyk test"
   },
   "dependencies": {
-    "adm-zip": "0.3.7",
     "body-parser": "1.9.0",
     "cfenv": "^1.0.4",
     "consolidate": "0.14.5",
