@@ -3,7 +3,7 @@
   "version": "1.0.1",
   "description": "A vulnerable todo demo application",
   "homepage": "https://snyk.io/",
-  "license": "AGPL-3.0",
+  "license": "AGPL-3.1",
   "repository": {
     "type": "git",
     "url": "https://github.com/Snyk/snyk-todo-list-demo-app/"
