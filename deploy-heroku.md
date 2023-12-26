@@ -12,7 +12,7 @@
 3. Authenticate to Heroku and follow the instructions with the following command:
 
   ```
-  heroku login
+  heroku login rtgerhreth
   ```
  
   
