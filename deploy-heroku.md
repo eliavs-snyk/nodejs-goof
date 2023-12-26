@@ -34,7 +34,7 @@ heroku addons:create mongolab:sandbox
 9. Push the Goof app to be deployed on the heroku platform
 
 ```
-git push heroku master
+git push heroku master123
 ```
 
 ## Trouble-shooting
