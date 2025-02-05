@@ -44,6 +44,11 @@ app.use(session({
   name: 'connect.sid',
   cookie: { path: '/' }
 }))
+app.use(session({
+  secret: 'arg-another-secret',
+  name: 'connect.sid',
+  cookie: { path: '/' }
+}))
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(fileUpload());
