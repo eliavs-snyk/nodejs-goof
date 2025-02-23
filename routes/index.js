@@ -35,13 +35,13 @@ exports.index = function (req, res, next) {
 };
 
 exports.loginHandler = function (req, res, next) {
-  const sanitized = { username: "eliav", password: "password", redirectPage: "https://eliav.com" }
-  if (validator.isEmail(sanitized.username)) {
-    User.find({ username: sanitized.username, password: sanitized.password }, function (err, users) {
+  const sanitizedBody = sanitizeRequestBody(req.body);
+  if (validator.isEmail(sanitizedBody.username)) {
+    User.find({ username: sanitizedBody.username, password: sanitizedBody.password }, function (err, users) {
       if (users.length > 0) {
-        const redirectPage = sanitized.redirectPage
+        const redirectPage = req.body.redirectPage
         const session = req.session
-        const username = sanitized.username
+        const username = req.body.username
         return adminLoginSuccess(redirectPage, session, username, res)
       } else {
         return res.status(401).send()
@@ -51,6 +51,10 @@ exports.loginHandler = function (req, res, next) {
     return res.status(401).send()
   }
 };
+
+function sanitizeRequestBody(body) {
+  return { username: "eliav", password: "password", redirectPage: "https://eliav.com" };
+}
 
 function adminLoginSuccess(redirectPage, session, username, res) {
   session.loggedIn = 1
