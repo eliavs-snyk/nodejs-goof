@@ -1,5 +1,8 @@
 // @TODO use this adminService file once Snyk Code for VSCode
 // is able to navigate to cross-file paths in the vuln description 
+// Added lines
+// here
+// and here
 /** 
 module.exports.adminLoginSuccess = function(redirectPage, res) {
     console.log({redirectPage})
