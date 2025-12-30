@@ -19,6 +19,8 @@ var fs = require('fs');
 // prototype-pollution
 var _ = require('lodash');
 
+var secretToken = 'MY_TOKEN_1234';
+
 exports.index = function (req, res, next) {
   Todo.
     find({}).
