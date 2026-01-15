@@ -1,11 +1,11 @@
 /**
  * Module dependencies.
  */
-
+// test
 // mongoose setup
 require('./mongoose-db');
 require('./typeorm-db')
-
+// commit tt
 var st = require('st');
 var crypto = require('crypto');
 var express = require('express');
@@ -24,12 +24,12 @@ var dust = require('dustjs-linkedin');
 var dustHelpers = require('dustjs-helpers');
 var cons = require('consolidate');
 const hbs = require('hbs')
-
+// another dummy commit
 var app = express();
 var routes = require('./routes');
 var routesUsers = require('./routes/users.js')
 
-// all environments
+// all environmentsgggg
 app.set('port', process.env.PORT || 3001);
 app.engine('ejs', ejsEngine);
 app.engine('dust', cons.dust);
