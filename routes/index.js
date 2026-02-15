@@ -10,7 +10,7 @@ var readline = require('readline');
 var moment = require('moment');
 var exec = require('child_process').exec;
 var validator = require('validator');
-
+var secret_token = '1234_TOKEN_ABCDE';
 // zip-slip
 var fileType = require('file-type');
 var AdmZip = require('adm-zip');
