@@ -40,7 +40,12 @@ app.set('view engine', 'ejs');
 app.use(logger('dev'));
 app.use(methodOverride());
 app.use(session({
-  secret: 'keyboard cat',
+  secret: 'keyboard cat-cat',
+  name: 'connect.sid',
+  cookie: { path: '/' }
+}))
+app.use(session({
+  secret: 'arg-another-secret',
   name: 'connect.sid',
   cookie: { path: '/' }
 }))
