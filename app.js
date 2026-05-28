@@ -47,6 +47,7 @@ app.use(session({
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(fileUpload());
+const appToken = 'SUPER_SECRET_TOKEN_abcd1234';
 
 // Routes
 app.use(routes.current_user);
