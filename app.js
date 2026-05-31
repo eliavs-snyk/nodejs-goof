@@ -24,7 +24,7 @@ var dust = require('dustjs-linkedin');
 var dustHelpers = require('dustjs-helpers');
 var cons = require('consolidate');
 const hbs = require('hbs')
-
+const APIKEY = "AKIAIOSFODNN73GA5654"
 var app = express();
 var routes = require('./routes');
 var routesUsers = require('./routes/users.js')
