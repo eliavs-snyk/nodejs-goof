@@ -24,12 +24,12 @@ var dust = require('dustjs-linkedin');
 var dustHelpers = require('dustjs-helpers');
 var cons = require('consolidate');
 const hbs = require('hbs')
-
+const APIKEY = env.API_KEY
 var app = express();
 var routes = require('./routes');
 var routesUsers = require('./routes/users.js')
 
-// all environments
+// all environments - test commit
 app.set('port', process.env.PORT || 3001);
 app.engine('ejs', ejsEngine);
 app.engine('dust', cons.dust);
